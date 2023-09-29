@@ -1,0 +1,1 @@
+This tutorial guides you through coding a Microbit to control NeoPixel LEDs on a Snowman-shaped board called SnowPi using Python. It covers setting up the Microbit and Mu Editor, lighting up individual LEDs, organizing LED groups with lists and functions, and adding interactivity with button inputs. 

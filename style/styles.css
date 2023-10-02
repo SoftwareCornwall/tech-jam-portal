@@ -29,3 +29,28 @@ a:hover {
     color: black;
 }
 
+
+
+footer {
+    
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    transition: all 0.5s;
+  }
+  
+  footer:hover {
+    padding: 20px;
+  }
+  
+  .footer-content {
+    margin: 0 auto;
+    max-width: 500px;
+    text-align: left;
+  }
+  
+

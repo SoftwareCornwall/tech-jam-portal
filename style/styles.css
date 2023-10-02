@@ -13,7 +13,7 @@
     flex-direction: column;
     align-items: center;
     width: 30%;
-    background-color: #9a9999;
+    background-color: grey;
     padding: 10px;
     margin: 5px;
 }
@@ -28,6 +28,7 @@ a {
 a:hover {
     color: black;
 }
+
 
 
 

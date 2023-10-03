@@ -1,3 +1,8 @@
+.container2 {
+    text-align: center;
+    background-color: white;
+}
+
 .banner_background {
   background-color: #bf382a;
 }
@@ -8,11 +13,12 @@
 }
 
 .image_desc {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     align-items: center;
-    width: 30%;
-    background-color: grey;
+    width: 30%; */
+    border: 2px solid #333;
+    /* background-color: grey; */
     padding: 10px;
     margin: 5px;
 }
@@ -32,29 +38,36 @@ a:hover {
     color: black;
 }
 
-.carousel_colour {
-  background-color: black;
-}
+
 
 
 footer {
-    width: 100%;
     background-color: #333;
     color: white;
     padding: 10px;
     transition: all 0.5s;
+  }
+  
+  footer:hover {
+    padding: 20px;
+  }
+  
+  .footer-content {
+    margin: 0 auto;
+    max-width: 500px;
+    text-align: left;
+  }
+  
+
+  .carousel-inner .carousel-item img {
+    transition: opacity 0.5s ease;
+  }
+  
+  .carousel-inner .carousel-item:hover img {
+    opacity: 0.7;
+  }
+
+.techjam_logo {
+  width: 80px;
+  height: 80px;
 }
-
-footer:hover {
-  padding: 20px;
-}
-
-.carousel-inner .carousel-item img {
-  transition: opacity 0.5s ease;
-}
-
-.carousel-inner .carousel-item:hover img {
-  opacity: 0.7;
-}
-
-

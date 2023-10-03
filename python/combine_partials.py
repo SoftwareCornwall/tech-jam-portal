@@ -1,7 +1,7 @@
 
 
 # List of HTML file names to be combined
-html_files = ["partials/header.html", "content/home.html", "partials/footer.html"]
+html_files = ["../partials/header.html", "../content/home.html", "../partials/footer.html"]
 
 # Output file name for the combined HTML
 output_file = "index.html"

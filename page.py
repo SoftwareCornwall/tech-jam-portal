@@ -1,5 +1,7 @@
+
+
 # List of HTML file names to be combined
-html_files = ["header.html", "home.html", "footer.html"]
+html_files = ["partials/header.html", "content/home.html", "partials/footer.html"]
 
 # Output file name for the combined HTML
 output_file = "index.html"
@@ -22,7 +24,7 @@ print(f"Combined HTML written to {output_file}")
 
 
 # List of HTML file names to be combined
-html_files = ["header.html", "python_page.html", "footer.html"]
+html_files = ["partials/header.html", "content/list.html", "partials/footer.html"]
 
 # Output file name for the combined HTML
 output_file = "python.html"

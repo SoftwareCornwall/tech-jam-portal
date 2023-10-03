@@ -3,6 +3,10 @@
     background-color: white;
 }
 
+.banner_background {
+  background-color: #bf382a;
+}
+
 .row2 {
     display: flex;
     justify-content: space-between;

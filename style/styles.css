@@ -23,6 +23,14 @@
     margin: 5px;
 }
 
+.image_desc p:first-of-type {
+  font-weight: 700;
+}
+
+.image_desc:hover{
+  background-color: grey;
+}
+
 .images_worksheet {
   width:80px;
   height:80px;
@@ -66,8 +74,42 @@ footer {
   .carousel-inner .carousel-item:hover img {
     opacity: 0.7;
   }
+  .carousel_colour {
+    background-color: black;
+  }
 
 .techjam_logo {
   width: 80px;
   height: 80px;
+}
+
+
+.btn-red {
+  background-color: #bf382a;
+  color: white;
+  border-radius: 0.5rem;
+  padding: 1rem 2rem 1rem 2rem; 
+}
+
+.btn-grey {
+  background-color: #9a9999;
+  color: #2f2f30;
+  border-radius: 0.5rem;
+  padding: 1rem 2rem 1rem 2rem; 
+}
+
+.btn-black {
+  background-color: #2f2f30;
+  color: #bf382a;
+  border-radius: 0.5rem;
+  padding: 1rem 2rem 1rem 2rem; 
+}
+
+.btn-black:hover {
+  color: #e65a4c;
+}
+
+.btn:hover {
+  transform: scale(1.2);
+  transition: transform 0.5s ease;
 }

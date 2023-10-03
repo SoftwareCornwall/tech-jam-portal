@@ -22,7 +22,10 @@
     margin: 5px;
 }
 
-
+.images_worksheet {
+  width:80px;
+  height:80px;
+}
 
 a {
     color: black;
@@ -34,7 +37,9 @@ a:hover {
     color: black;
 }
 
-
+.carousel_colour {
+  background-color: black;
+}
 
 
 footer {

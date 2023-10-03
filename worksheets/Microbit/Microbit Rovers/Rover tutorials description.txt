@@ -1,4 +1,0 @@
-this work sheet will show you how to create a remonte control for one of our mission to  mars rovers. Whether you're a begginner or an enthusiast, this worksheets will help you explore the potential of the BBC mircobit.
-
-
-In this exercise, you will create a remote control system for the Mars Rover using a MicroBit and Python programming. Your goal is to program a second MicroBit to send instructions via radio to control the rover. You'll be using the Mu Python editor for coding and flashing your code onto the MicroBit.

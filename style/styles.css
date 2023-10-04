@@ -21,6 +21,7 @@
     /* background-color: grey; */
     padding: 10px;
     margin: 5px;
+    background-color: white;
 }
 
 .image_desc p:first-of-type {

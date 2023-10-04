@@ -6,7 +6,7 @@ tutorial_names = []
 pdf_links = []
 languages = os.listdir(f'{os.getcwd()}/worksheets')
 
-languages = [i for i in languages if i[0] != '.' and i[-3:] != '.py']
+languages = [i for i in languages if not i.startswith('.') and not i.endswith('.py')]
 
 for language in languages:
     tutorials = os.listdir(f'worksheets/{language}')
@@ -14,8 +14,8 @@ for language in languages:
 
     for i in tutorials:
         file_list = os.listdir(f'worksheets/{language}/{i}')
-        text_files = [i for i in file_list if i[-4:] == '.txt']
-        pdf_files = [i for i in file_list if i[-4:] == '.pdf']
+        text_files = [i for i in file_list if i.endswith('.txt')]
+        pdf_files = [i for i in file_list if i.endswith('.pdf')]
 
         # adding to pdf_links
         if len(pdf_files) > 1:

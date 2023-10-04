@@ -22,6 +22,7 @@
     padding: 10px;
     margin: 5px;
     background-color: white;
+    border-radius: 50px;
 }
 
 .image_desc p:first-of-type {

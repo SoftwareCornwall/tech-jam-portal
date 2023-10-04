@@ -6,8 +6,11 @@ tutorial_names = []
 pdf_links = []
 languages = os.listdir(f'{os.getcwd()}/worksheets')
 
+languages = [i for i in languages if i[0] != '.' and i[-3:] != '.py']
+
 for language in languages:
   tutorials = os.listdir(f'worksheets/{language}')
+  tutorials = [i for i in tutorials if not i.startswith('.')]
   
   for i in tutorials:
     file_list = os.listdir(f'worksheets/{language}/{i}')
@@ -57,5 +60,5 @@ with open('template_index.html', 'r') as file:
 
 content = content.replace('{{Content}}', output)
 
-with open('index_2.html', 'w') as file:
+with open('modified_index.html', 'w') as file:
   file.write(content)

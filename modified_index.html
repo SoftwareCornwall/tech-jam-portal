@@ -8,43 +8,47 @@
   <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
   <link rel="stylesheet" href="style/styles.css">
 </head>
+
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top banner_background" >
-    <div class="container-fluid">
-      <a class="navbar-brand" href="index.html">
-        <img src="images/tech-jam-website-logo-1280x1280.png" alt="Logo" width="30" height="30" ></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav">
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Worksheets
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <li><a class="dropdown-item" href="#">Python</a></li>
-                  <li><a class="dropdown-item" href="#">Javascript</a></li>
-                  <li><a class="dropdown-item" href="#">SQL</a></li>
-                  <li><a class="dropdown-item" href="#">Microbit</a></li>
-                </ul>
-              </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#volunteers.html">Volunteers</a>
-          </li>
-        </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top banner_background" >
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="images/tech-jam-website-logo-1280x1280.png" alt="Logo" width="30" height="30" ></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Worksheets
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="python.html">Python</a></li>
+                    <li><a class="dropdown-item" href="#">Javascript</a></li>
+                    <li><a class="dropdown-item" href="#">SQL</a></li>
+                    <li><a class="dropdown-item" href="#">Microbit</a></li>
+                  </ul>
+                </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#volunteers.html">Volunteers</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
+</body>
+
+
 
   <!--Primary bf382a Secondary 2f2f30 Tertiary 9a9999-->
 
   <div class="container-fluid">
-    <div class="row" style="background-color: #2f2f30;">
-      <div class="col-6 mx-auto"> 
+    <div class="row carousel_colour">
+      <div class="col-6 mx-auto">
         <div id="Carousel" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active" data-bs-interval="2000">
@@ -62,131 +66,191 @@
     </div>
   </div>
 
-  <div class="container container2">
+  <div class="container text-center">
     <h1>Popular Worksheets!</h1>
-    <div class="row2">
+    <div class="row">
       
-  <div class="image_desc">
-    <a href="worksheets/SenseHAT/rainbow_predictor/rainbow_predictor.pdf">
-      <img src="images/python_logo.jpg" height="80" width="80">
-      <p>The Rainbow Predictor project is a fun and educational endeavor. It involves using the Sense HAT's temperature and humidity sensors to forecast the likelihood of spotting a rainbow. When the optimal weather conditions are detected, a vibrant rainbow will be displayed on the Sense HAT's LED Matrix. To simulate this project in the Trinket emulator, you can manipulate sliders to adjust the temperature and humidity levels. This engaging project encourages experimentation and learning about weather patterns and sensor technology.</p>
-    </a>
-  </div>
+        <div class="col-4 mb-4">
+            <a href="worksheets/SenseHAT/rainbow_predictor/rainbow_predictor.pdf">
+            <div class="image_desc h-100 p-3">
+                <img src="images/python_logo.jpg" class="images_worksheet">
+                <h2>Unknown Title</h2>
+                    <p>Difficulty - Unknown</p>
+                    <p>The Rainbow Predictor project is a fun and educational endeavor. It involves using the Sense HAT's temperature and humidity sensors to forecast the likelihood of spotting a rainbow. When the optimal weather conditions are detected, a vibrant rainbow will be displayed on the Sense HAT's LED Matrix. To simulate this project in the Trinket emulator, you can manipulate sliders to adjust the temperature and humidity levels. This engaging project encourages experimentation and learning about weather patterns and sensor technology.</p>
+            </div>
+            </a>
+        </div>
 
 
-  <div class="image_desc">
-    <a href="worksheets/SenseHAT/compass_maze/compass_maze.pdf">
-      <img src="images/python_logo.jpg" height="80" width="80">
-      <p>The "Compass Maze" is an engaging and educational project designed for coding clubs or individuals interested in learning Python programming and exploring the capabilities of the Raspberry Pi Sense HAT. In this project, participants will utilize the Sense HAT's magnetometer (compass) to navigate through a maze of colorful rooms</p>
-    </a>
-  </div>
+        <div class="col-4 mb-4">
+            <a href="worksheets/SenseHAT/compass_maze/compass_maze.pdf">
+            <div class="image_desc h-100 p-3">
+                <img src="images/python_logo.jpg" class="images_worksheet">
+                <h2>Unknown Title</h2>
+                    <p>Difficulty - Unknown</p>
+                    <p>The "Compass Maze" is an engaging and educational project designed for coding clubs or individuals interested in learning Python programming and exploring the capabilities of the Raspberry Pi Sense HAT. In this project, participants will utilize the Sense HAT's magnetometer (compass) to navigate through a maze of colorful rooms</p>
+            </div>
+            </a>
+        </div>
 
 
-  <div class="image_desc">
-    <a href="worksheets/SenseHAT/pixel_pet/pixel_pet.pdf">
-      <img src="images/python_logo.jpg" height="80" width="80">
-      <p>This tutorial guides you through the creation of a digital pet using the Raspberry Pi Sense HAT. The digital pet will be capable of detecting movement, allowing you to take it for a virtual walk. Through this project, you will learn how to use Python programming to manipulate the Sense HAT's LED matrix, employ loops and functions, and utilize the Sense HAT's accelerometer for interactive behavior.</p>
-    </a>
-  </div>
+        <div class="col-4 mb-4">
+            <a href="worksheets/SenseHAT/pixel_pet/pixel_pet.pdf">
+            <div class="image_desc h-100 p-3">
+                <img src="images/python_logo.jpg" class="images_worksheet">
+                <h2>Unknown Title</h2>
+                    <p>Difficulty - Unknown</p>
+                    <p>This tutorial guides you through the creation of a digital pet using the Raspberry Pi Sense HAT. The digital pet will be capable of detecting movement, allowing you to take it for a virtual walk. Through this project, you will learn how to use Python programming to manipulate the Sense HAT's LED matrix, employ loops and functions, and utilize the Sense HAT's accelerometer for interactive behavior.</p>
+            </div>
+            </a>
+        </div>
 
 
-  <div class="image_desc">
-    <a href="worksheets/SenseHAT/flappy_astronaut/flappy_astronaut.pdf">
-      <img src="images/python_logo.jpg" height="80" width="80">
-      <p>Flappy Astronaut is an engaging Raspberry Pi project that guides learners through the creation of a Flappy Bird-inspired game using the Sense HAT and Python. Participants will explore various aspects of digital making and coding while creating a fun and interactive game. They will learn how to illuminate Sense HAT LEDs, use the Sense HAT joystick for navigation, and utilize 2D lists to represent the game screen. This project provides hands-on experience in physical computing and game development. Whether using physical hardware or an emulator, participants will enjoy the process of coding their own Flappy Astronaut game on the Raspberry Pi platform.</p>
-    </a>
-  </div>
+        <div class="col-4 mb-4">
+            <a href="worksheets/SenseHAT/flappy_astronaut/flappy_astronaut.pdf">
+            <div class="image_desc h-100 p-3">
+                <img src="images/python_logo.jpg" class="images_worksheet">
+                <h2>Unknown Title</h2>
+                    <p>Difficulty - Unknown</p>
+                    <p>Flappy Astronaut is an engaging Raspberry Pi project that guides learners through the creation of a Flappy Bird-inspired game using the Sense HAT and Python. Participants will explore various aspects of digital making and coding while creating a fun and interactive game. They will learn how to illuminate Sense HAT LEDs, use the Sense HAT joystick for navigation, and utilize 2D lists to represent the game screen. This project provides hands-on experience in physical computing and game development. Whether using physical hardware or an emulator, participants will enjoy the process of coding their own Flappy Astronaut game on the Raspberry Pi platform.</p>
+            </div>
+            </a>
+        </div>
 
 
-  <div class="image_desc">
-    <a href="worksheets/SenseHAT/count_down_timer/countdown_timer.pdf">
-      <img src="images/python_logo.jpg" height="80" width="80">
-      <p>This tutorial guides coding clubs through the creation of a countdown timer using the Sense HAT, a hardware add-on for the Raspberry Pi. By following the steps outlined in the tutorial, participants will learn how to utilize the Sense HAT's colored LED matrix to display a countdown timer.</p>
-    </a>
-  </div>
+        <div class="col-4 mb-4">
+            <a href="worksheets/SenseHAT/count_down_timer/countdown_timer.pdf">
+            <div class="image_desc h-100 p-3">
+                <img src="images/python_logo.jpg" class="images_worksheet">
+                <h2>Unknown Title</h2>
+                    <p>Difficulty - Unknown</p>
+                    <p>This tutorial guides coding clubs through the creation of a countdown timer using the Sense HAT, a hardware add-on for the Raspberry Pi. By following the steps outlined in the tutorial, participants will learn how to utilize the Sense HAT's colored LED matrix to display a countdown timer.</p>
+            </div>
+            </a>
+        </div>
 
 
-  <div class="image_desc">
-    <a href="worksheets/Microbit/Microbit_Snowpi/microbit_snowpi.pdf">
-      <img src="images/python_logo.jpg" height="80" width="80">
-      <p>This tutorial guides you through coding a Microbit to control NeoPixel LEDs on a Snowman-shaped board called SnowPi using Python. It covers setting up the Microbit and Mu Editor, lighting up individual LEDs, organizing LED groups with lists and functions, and adding interactivity with button inputs. </p>
-    </a>
-  </div>
+        <div class="col-4 mb-4">
+            <a href="worksheets/Microbit/Microbit_Snowpi/microbit_snowpi.pdf">
+            <div class="image_desc h-100 p-3">
+                <img src="images/python_logo.jpg" class="images_worksheet">
+                <h2>Unknown Title</h2>
+                    <p>Difficulty - Unknown</p>
+                    <p>This tutorial guides you through coding a Microbit to control NeoPixel LEDs on a Snowman-shaped board called SnowPi using Python. It covers setting up the Microbit and Mu Editor, lighting up individual LEDs, organizing LED groups with lists and functions, and adding interactivity with button inputs. </p>
+            </div>
+            </a>
+        </div>
 
 
-  <div class="image_desc">
-    <a href="worksheets/Microbit/microbit_snowflakes/christmas_microbit_stars.pdf">
-      <img src="images/python_logo.jpg" height="80" width="80">
-      <p>In this fun and festive tutorial, you'll learn how to use a Microbit to create messages, animations, and interactive displays on a Christmas-themed star. You'll bring your holiday spirit to life by programming the Microbit to respond to button presses and display various images and animations.</p>
-    </a>
-  </div>
+        <div class="col-4 mb-4">
+            <a href="worksheets/Microbit/microbit_snowflakes/christmas_microbit_stars.pdf">
+            <div class="image_desc h-100 p-3">
+                <img src="images/python_logo.jpg" class="images_worksheet">
+                <h2>Unknown Title</h2>
+                    <p>Difficulty - Unknown</p>
+                    <p>In this fun and festive tutorial, you'll learn how to use a Microbit to create messages, animations, and interactive displays on a Christmas-themed star. You'll bring your holiday spirit to life by programming the Microbit to respond to button presses and display various images and animations.</p>
+            </div>
+            </a>
+        </div>
 
 
-  <div class="image_desc">
-    <a href="worksheets/Microbit/Microbit_Gravity/microbit_zero_g.pdf">
-      <img src="images/python_logo.jpg" height="80" width="80">
-      <p>In this tutorial, we will explore the concept of zero gravity (zero-G) and learn how to demonstrate it using Microbits, making it an engaging and educational activity. Zero gravity is the sensation of weightlessness experienced by astronauts in free fall, and we'll simulate this phenomenon using accelerometer data from Microbits</p>
-    </a>
-  </div>
+        <div class="col-4 mb-4">
+            <a href="worksheets/Microbit/Microbit_Gravity/microbit_zero_g.pdf">
+            <div class="image_desc h-100 p-3">
+                <img src="images/python_logo.jpg" class="images_worksheet">
+                <h2>Unknown Title</h2>
+                    <p>Difficulty - Unknown</p>
+                    <p>In this tutorial, we will explore the concept of zero gravity (zero-G) and learn how to demonstrate it using Microbits, making it an engaging and educational activity. Zero gravity is the sensation of weightlessness experienced by astronauts in free fall, and we'll simulate this phenomenon using accelerometer data from Microbits</p>
+            </div>
+            </a>
+        </div>
 
 
-  <div class="image_desc">
-    <a href="worksheets/Microbit/microbit_pixel_ring/microbit_neopixel_ring.pdf">
-      <img src="images/python_logo.jpg" height="80" width="80">
-      <p>This tutorial provides step-by-step instructions for coding a micro:bit to control a Neopixel ring, which is a circular arrangement of addressable LEDs. It is designed for individuals looking for a bit more challenge than working with a single Neopixel sheet.</p>
-    </a>
-  </div>
+        <div class="col-4 mb-4">
+            <a href="worksheets/Microbit/microbit_pixel_ring/microbit_neopixel_ring.pdf">
+            <div class="image_desc h-100 p-3">
+                <img src="images/python_logo.jpg" class="images_worksheet">
+                <h2>Unknown Title</h2>
+                    <p>Difficulty - Unknown</p>
+                    <p>This tutorial provides step-by-step instructions for coding a micro:bit to control a Neopixel ring, which is a circular arrangement of addressable LEDs. It is designed for individuals looking for a bit more challenge than working with a single Neopixel sheet.</p>
+            </div>
+            </a>
+        </div>
 
 
-  <div class="image_desc">
-    <a href="worksheets/Microbit/microbit_satellite/microbit_satellite_communications.pdf">
-      <img src="images/python_logo.jpg" height="80" width="80">
-      <p>This tutorial guides users through the process of setting up communication between BBC Microbits using radio signals, effectively creating a simple satellite communication system. </p>
-    </a>
-  </div>
+        <div class="col-4 mb-4">
+            <a href="worksheets/Microbit/microbit_satellite/microbit_satellite_communications.pdf">
+            <div class="image_desc h-100 p-3">
+                <img src="images/python_logo.jpg" class="images_worksheet">
+                <h2>Unknown Title</h2>
+                    <p>Difficulty - Unknown</p>
+                    <p>This tutorial guides users through the process of setting up communication between BBC Microbits using radio signals, effectively creating a simple satellite communication system. </p>
+            </div>
+            </a>
+        </div>
 
 
-  <div class="image_desc">
-    <a href="worksheets/Microbit/microbit_neopixel_card/microbit_card_neopixels.pdf">
-      <img src="images/python_logo.jpg" height="80" width="80">
-      <p>This tutorial provides step-by-step instructions for creating an engaging coding project using a MicroBit and Neopixels. Designed for educational purposes, particularly for beginners in programming and electronics, this tutorial guides participants through the process of lighting up a piece of card with Neopixels. Neopixels are special LEDs capable of displaying various colors and brightness levels.</p>
-    </a>
-  </div>
+        <div class="col-4 mb-4">
+            <a href="worksheets/Microbit/microbit_neopixel_card/microbit_card_neopixels.pdf">
+            <div class="image_desc h-100 p-3">
+                <img src="images/python_logo.jpg" class="images_worksheet">
+                <h2>Unknown Title</h2>
+                    <p>Difficulty - Unknown</p>
+                    <p>This tutorial provides step-by-step instructions for creating an engaging coding project using a MicroBit and Neopixels. Designed for educational purposes, particularly for beginners in programming and electronics, this tutorial guides participants through the process of lighting up a piece of card with Neopixels. Neopixels are special LEDs capable of displaying various colors and brightness levels.</p>
+            </div>
+            </a>
+        </div>
 
 
-  <div class="image_desc">
-    <a href="worksheets/Microbit/microbit_rovers/microbit_short_rover_worksheet.pdf">
-      <img src="images/python_logo.jpg" height="80" width="80">
-      <p>In this exercise, you will create a remote control system for the Mars Rover using a MicroBit and Python programming. Your goal is to program a second MicroBit to send instructions via radio to control the rover. You'll be using the Mu Python editor for coding and flashing your code onto the MicroBit.</p>
-    </a>
-  </div>
+        <div class="col-4 mb-4">
+            <a href="worksheets/Microbit/microbit_rovers/microbit_short_rover_worksheet.pdf">
+            <div class="image_desc h-100 p-3">
+                <img src="images/python_logo.jpg" class="images_worksheet">
+                <h2>Unknown Title</h2>
+                    <p>Difficulty - Unknown</p>
+                    <p>In this exercise, you will create a remote control system for the Mars Rover using a MicroBit and Python programming. Your goal is to program a second MicroBit to send instructions via radio to control the rover. You'll be using the Mu Python editor for coding and flashing your code onto the MicroBit.</p>
+            </div>
+            </a>
+        </div>
 
 
-  <div class="image_desc">
-    <a href="worksheets/Microbit/Microbit_Timing_Gate/toy_cars_timing_gate.pdf">
-      <img src="images/python_logo.jpg" height="80" width="80">
-      <p>This tutorial guides coding club members in creating a time gate for toy cars using Microbits and lights. Participants will set up a sloping track with two torches, Microbits as timing traps, and radio communication. They will code the Microbits to start and stop timing when a car's shadow passes in front of an LED, then calculate and display the car's speed. The tutorial emphasizes the importance of spelling, punctuation, and code structure in Python programming.</p>
-    </a>
-  </div>
+        <div class="col-4 mb-4">
+            <a href="worksheets/Microbit/Microbit_Timing_Gate/toy_cars_timing_gate.pdf">
+            <div class="image_desc h-100 p-3">
+                <img src="images/python_logo.jpg" class="images_worksheet">
+                <h2>Unknown Title</h2>
+                    <p>Difficulty - Unknown</p>
+                    <p>This tutorial guides coding club members in creating a time gate for toy cars using Microbits and lights. Participants will set up a sloping track with two torches, Microbits as timing traps, and radio communication. They will code the Microbits to start and stop timing when a car's shadow passes in front of an LED, then calculate and display the car's speed. The tutorial emphasizes the importance of spelling, punctuation, and code structure in Python programming.</p>
+            </div>
+            </a>
+        </div>
 
 
-  <div class="image_desc">
-    <a href="worksheets/Scratch/traffic lights/scratch3_traffic_lights.pdf">
-      <img src="images/python_logo.jpg" height="80" width="80">
-      <p>This tutorial guides beginners in coding clubs or those new to coding on how to use Scratch 3 and a Raspberry Pi to control a set of three LEDs simulating a traffic light sequence. It explains the basics of connecting the LEDs to GPIO pins, accessing Scratch 3 on the Raspberry Pi, and using Scratch's visual coding blocks. The tutorial covers topics such as turning LEDs on and off, creating sequences with broadcasts, and building a complete traffic light sequence. It concludes with an extra challenge to modify the program for flashing amber lights and encourages learners to experiment with their own LED sequences. Overall, it provides a hands-on introduction to programming and hardware interaction in a fun and educational way.</p>
-    </a>
-  </div>
+        <div class="col-4 mb-4">
+            <a href="worksheets/Scratch/traffic lights/scratch3_traffic_lights.pdf">
+            <div class="image_desc h-100 p-3">
+                <img src="images/python_logo.jpg" class="images_worksheet">
+                <h2>Unknown Title</h2>
+                    <p>Difficulty - Unknown</p>
+                    <p>This tutorial guides beginners in coding clubs or those new to coding on how to use Scratch 3 and a Raspberry Pi to control a set of three LEDs simulating a traffic light sequence. It explains the basics of connecting the LEDs to GPIO pins, accessing Scratch 3 on the Raspberry Pi, and using Scratch's visual coding blocks. The tutorial covers topics such as turning LEDs on and off, creating sequences with broadcasts, and building a complete traffic light sequence. It concludes with an extra challenge to modify the program for flashing amber lights and encourages learners to experiment with their own LED sequences. Overall, it provides a hands-on introduction to programming and hardware interaction in a fun and educational way.</p>
+            </div>
+            </a>
+        </div>
 
     </div>
   </div>
-
 <footer>
-  <div class="footer-content">
-    <img src="images/tech-jam-website-logo-1280x1280.png" width="100" height="100">
-    <h3>Cornwall Tech Jam</h3>
-    <p>Cornwall Tech Jam: Where Raspberry Pi's, Programming and Pasties meet</p>
-  </div>
-</footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-6 offset-3">
+          <img src="images/tech-jam-website-logo-1280x1280.png" width="100" height="100">
+          <h3>Cornwall Tech Jam</h3>
+          <p>Cornwall Tech Jam: Where Raspberry Pi's, Programming and Pasties meet</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
 
 
 <script src="bootstrap/js/bootstrap.js"></script>

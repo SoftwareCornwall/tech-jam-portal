@@ -9,48 +9,52 @@ languages = os.listdir(f'{os.getcwd()}/worksheets')
 languages = [i for i in languages if i[0] != '.' and i[-3:] != '.py']
 
 for language in languages:
-  tutorials = os.listdir(f'worksheets/{language}')
-  tutorials = [i for i in tutorials if not i.startswith('.')]
-  
-  for i in tutorials:
-    file_list = os.listdir(f'worksheets/{language}/{i}')
-    text_files = [i for i in file_list if i[-4:] == '.txt']
-    pdf_files = [i for i in file_list if i[-4:] == '.pdf']
+    tutorials = os.listdir(f'worksheets/{language}')
+    tutorials = [i for i in tutorials if not i.startswith('.')]
 
-    # adding to pdf_links
-    if len(pdf_files) > 1:
-      warnings.warn(f'{i} tutorial has more than one pdf. Ignoring it')
-    
-    elif len(pdf_files) < 1:
-      raise ValueError(f'tutorial {i} has no pdf files')
-    
-    elif len(pdf_files) == 1:
-      pdf_links.append(f'worksheets/{language}/{i}/{pdf_files[0]}')
+    for i in tutorials:
+        file_list = os.listdir(f'worksheets/{language}/{i}')
+        text_files = [i for i in file_list if i[-4:] == '.txt']
+        pdf_files = [i for i in file_list if i[-4:] == '.pdf']
 
-    # adding to descriptions
-    if len(text_files) > 1:
-      raise ValueError(f'{i} tutorial has more than one description')
-    
-    elif len(text_files) == 1:
-      tutorial_names.append(text_files[0])
+        # adding to pdf_links
+        if len(pdf_files) > 1:
+            warnings.warn(f'{i} tutorial has more than one pdf. Ignoring it')
 
-      with open(f'worksheets/{language}/{i}/{tutorial_names[-1]}', 'r') as file:
-        descriptions.append(file.read().replace('\n', ''))
+        elif len(pdf_files) < 1:
+            raise ValueError(f'tutorial {i} has no pdf files')
+
+        elif len(pdf_files) == 1:
+            pdf_links.append(f'worksheets/{language}/{i}/{pdf_files[0]}')
+
+        # adding to descriptions
+        if len(text_files) > 1:
+            raise ValueError(f'{i} tutorial has more than one description')
+
+        elif len(text_files) == 1:
+            tutorial_names.append(text_files[0])
+
+            with open(f'worksheets/{language}/{i}/{tutorial_names[-1]}', 'r') as file:
+               descriptions.append(file.read().replace('\n', ''))
 
 template = '''
-  <div class="image_desc">
-    <a href="--pdf link--">
-      <img src="images/python_logo.jpg" height="80" width="80">
-      <p>--description--</p>
-    </a>
-  </div>
+        <div class="col-4 mb-4">
+            <a href="{{pdf link}}">
+            <div class="image_desc h-100 p-3">
+                <img src="images/python_logo.jpg" class="images_worksheet">
+                <h2>Unknown Title</h2>
+                    <p>Difficulty - Unknown</p>
+                    <p>{{description}}</p>
+            </div>
+            </a>
+        </div>
 '''
 
 filled_templates = []
 
 for (desc, link) in zip(descriptions, pdf_links):
-  output = template.replace('--pdf link--', link)
-  output = output.replace('--description--', desc)
+  output = template.replace('{{pdf link}}', link)
+  output = output.replace('{{description}}', desc)
   filled_templates.append(output)
 
 output = '\n'.join(filled_templates)

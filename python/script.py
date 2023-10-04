@@ -54,7 +54,7 @@ for language in languages:
             image = 'images/tech-jam-website-logo-1280x1280.png'
         images.append(image)
 
-with open('partials/list.html', 'r') as file:
+with open('partials/list_item.html', 'r') as file:
    template = file.read()
 
 filled_templates = []
@@ -69,10 +69,10 @@ for (desc, link, title, image, difficulty_level) in zip(descriptions, pdf_links,
 
 output = '\n'.join(filled_templates)
 
-with open('partials/list-extra.html', 'r') as file:
+with open('partials/list_full.html', 'r') as file:
    full_template = file.read()
 
 full_html = full_template.replace('{{Content}}', output)
 
-with open('content/list.html', 'w') as file:
+with open('content/list_item.html', 'w') as file:
     file.write(full_html)

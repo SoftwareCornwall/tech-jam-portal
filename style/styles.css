@@ -30,7 +30,7 @@
 }
 
 .image_desc:hover{
-  background-color: lightblue;
+  background-color: lightgrey;
 }
 
 .images_worksheet {
@@ -131,7 +131,7 @@ footer {
   
 }
 
-.volunteer_body {
+.dark_body {
   background-color: #2f2f30;
 }
 

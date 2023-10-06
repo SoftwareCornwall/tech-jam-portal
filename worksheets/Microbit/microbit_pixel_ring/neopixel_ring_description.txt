@@ -1,1 +1,2 @@
 This tutorial provides step-by-step instructions for coding a micro:bit to control a Neopixel ring, which is a circular arrangement of addressable LEDs. It is designed for individuals looking for a bit more challenge than working with a single Neopixel sheet.
+Beginner

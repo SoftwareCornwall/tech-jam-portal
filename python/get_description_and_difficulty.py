@@ -42,10 +42,11 @@ for language in languages:
             with open(f'worksheets/{language}/{tut}/{text_files[0]}', 'r') as file:
                descriptions.append(file.readline())
                diff_level = file.readline()
+               print(diff_level)
                if diff_level == '':
                    difficulties.append('Not set')
                else:
-                   difficulties.append(file.readline())
+                   difficulties.append(diff_level)
 
         # image
         if 'website-image.png' in file_list:

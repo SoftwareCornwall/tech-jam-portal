@@ -16,5 +16,5 @@ def combine(html_files , output_file):
 html_home = ["/partials/header.html", "/content/home.html", "/partials/footer.html"]
 combine(html_home , output_file="index.html")
 
-html_list = ["/partials/header.html", "/content/list.html", "/partials/footer.html"]
+html_list = ["/partials/header.html", "/content/list_item.html", "/partials/footer.html"]
 combine(html_list, output_file="python.html")

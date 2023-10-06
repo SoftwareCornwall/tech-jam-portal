@@ -14,11 +14,11 @@ def combine(html_files , output_file):
 
 # List of HTML file names to be combined
 html_home = ["/partials/header.html", "/content/home.html", "/partials/footer.html"]
-combine(html_home , output_file="/site/index.html")
+combine(html_home , output_file="index.html")
 
 html_list = ["/partials/header.html", "/content/list.html", "/partials/footer.html"]
-combine(html_list, output_file="/site/python.html")
-combine(html_list, output_file="/site/microbit.html")
-combine(html_list, output_file="/site/sensehat.html")
+combine(html_list, output_file="python.html")
+combine(html_list, output_file="microbit.html")
+combine(html_list, output_file="sensehat.html")
 
 # Copy the Volunteers and about page

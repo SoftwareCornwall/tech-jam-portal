@@ -85,5 +85,5 @@ full_html = full_template.replace('{{Content}}', output)
 
 # save full list
 
-with open('content/list_placeholder.html', 'w') as file:
+with open('content/list.html', 'w') as file:
     file.write(full_html)

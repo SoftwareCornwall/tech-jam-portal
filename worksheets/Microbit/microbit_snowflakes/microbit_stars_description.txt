@@ -1,1 +1,2 @@
 In this fun and festive tutorial, you'll learn how to use a Microbit to create messages, animations, and interactive displays on a Christmas-themed star. You'll bring your holiday spirit to life by programming the Microbit to respond to button presses and display various images and animations.
+Beginner

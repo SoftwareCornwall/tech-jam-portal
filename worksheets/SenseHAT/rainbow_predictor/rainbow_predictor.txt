@@ -1,1 +1,2 @@
 The Rainbow Predictor project is a fun and educational endeavor. It involves using the Sense HAT's temperature and humidity sensors to forecast the likelihood of spotting a rainbow. When the optimal weather conditions are detected, a vibrant rainbow will be displayed on the Sense HAT's LED Matrix. To simulate this project in the Trinket emulator, you can manipulate sliders to adjust the temperature and humidity levels. This engaging project encourages experimentation and learning about weather patterns and sensor technology.
+Beginner

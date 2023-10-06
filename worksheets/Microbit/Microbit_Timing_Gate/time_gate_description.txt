@@ -1,1 +1,2 @@
 This tutorial guides coding club members in creating a time gate for toy cars using Microbits and lights. Participants will set up a sloping track with two torches, Microbits as timing traps, and radio communication. They will code the Microbits to start and stop timing when a car's shadow passes in front of an LED, then calculate and display the car's speed. The tutorial emphasizes the importance of spelling, punctuation, and code structure in Python programming.
+Beginner

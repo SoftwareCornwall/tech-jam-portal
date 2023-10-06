@@ -1,1 +1,2 @@
 This tutorial guides coding clubs through the creation of a countdown timer using the Sense HAT, a hardware add-on for the Raspberry Pi. By following the steps outlined in the tutorial, participants will learn how to utilize the Sense HAT's colored LED matrix to display a countdown timer.
+Beginner

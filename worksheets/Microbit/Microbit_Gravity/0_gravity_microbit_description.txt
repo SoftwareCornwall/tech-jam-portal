@@ -1,1 +1,2 @@
 In this tutorial, we will explore the concept of zero gravity (zero-G) and learn how to demonstrate it using Microbits, making it an engaging and educational activity. Zero gravity is the sensation of weightlessness experienced by astronauts in free fall, and we'll simulate this phenomenon using accelerometer data from Microbits
+Beginner

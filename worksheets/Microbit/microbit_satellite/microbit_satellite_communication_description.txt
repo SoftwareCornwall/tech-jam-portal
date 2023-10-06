@@ -1,1 +1,2 @@
 This tutorial guides users through the process of setting up communication between BBC Microbits using radio signals, effectively creating a simple satellite communication system. 
+Beginner

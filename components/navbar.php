@@ -12,10 +12,10 @@
                     Worksheets
                   </a>
                   <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <li><a class="dropdown-item" href="python.html">Python</a></li>
-                    <li><a class="dropdown-item" href="#">Javascript</a></li>
-                    <li><a class="dropdown-item" href="#">SQL</a></li>
-                    <li><a class="dropdown-item" href="#">Microbit</a></li>
+                    <li><a class="dropdown-item" href="worksheets.php?language=python">Python</a></li>
+                    <li><a class="dropdown-item" href="worksheets.php?language=js">Javascript</a></li>
+                    <li><a class="dropdown-item" href="worksheets.php?language=SQL">SQL</a></li>
+                    <li><a class="dropdown-item" href="worksheets.php?language=HTML/CSS">Html</a></li>
                   </ul>
                 </li>
             <li class="nav-item">

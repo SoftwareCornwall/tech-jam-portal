@@ -42,10 +42,11 @@ for language in languages:
             with open(f'worksheets/{language}/{tut}/{text_files[0]}', 'r') as file:
                descriptions.append(file.readline())
                diff_level = file.readline()
+               print(diff_level)
                if diff_level == '':
                    difficulties.append('Not set')
                else:
-                   difficulties.append(file.readline())
+                   difficulties.append(diff_level)
 
         # image
         if 'website-image.png' in file_list:
@@ -84,5 +85,5 @@ full_html = full_template.replace('{{Content}}', output)
 
 # save full list
 
-with open('content/list_placeholder.html', 'w') as file:
+with open('content/list.html', 'w') as file:
     file.write(full_html)

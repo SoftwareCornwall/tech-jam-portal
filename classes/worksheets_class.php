@@ -22,6 +22,7 @@ class Worksheets {
                         <img src="images/tech-jam-website-logo-1280x1280.png" class="images_worksheet">
                         <h2><?php echo $row["title"]; ?></h2>
                         <p>Difficulty - <?php echo $row["difficulty"]; ?></p>
+                        <p><b>Language - <?php echo $row["language"]; ?></b></p>
                         <p><?php echo $row["description"]; ?></p>
                     </div>
                 </a>
